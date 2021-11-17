@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap');
 
 @font-face {
     font-family:'biology1';
@@ -94,6 +95,7 @@
     --font-18:'figufonttree';   
     --font-19:'Times New Roman', Times, serif;
     --font-20:Arial, Helvetica, sans-serif;
+    --font-21: 'Baloo Da 2', 'cursive';
 }
 
 *{
@@ -108,7 +110,7 @@
     margin: auto;
 }
 header{
-    background-image: linear-gradient(to top, green, lime);
+    background-image: linear-gradient(to bottom, blue, rgb(96, 255, 255));
     text-align: center;
     padding: 1rem .8rem 2rem .8rem;    
 }
@@ -117,9 +119,11 @@ header h1{
     font: normal normal 4rem var(--font-1);
 }
 header h2{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font: normal lighter 2.5rem var(--font-20);
     color: rgb(41, 37, 37);
+    text-align: start;
+    padding-left: 27rem;
 }
 .hamb{
     position: fixed;
@@ -210,10 +214,10 @@ header h2{
 }
 .social-list li i:hover{    
     border-radius: 25%;
-    color: blue;
+    color:lime;
 }
 nav{
-    background-color: green;
+    background-color: aqua;
 }
 nav ul{
     display: flex;
@@ -231,5 +235,96 @@ nav ul li:hover{
     color: white;
     box-shadow: 0px 0px 5px black;
 }
-
-
+.bgcentral{
+    background-image: url('imagens/bg-3.jpg');
+    background-position: 0 20%;
+    width: 100%;
+    height: 72.3vh;
+    background-size: 100rem;
+}
+.sobre{
+    background-image: linear-gradient(to left, #01131d, #11577a,  #27bffe, #91c4d9,#2c6a86);
+    height: 100%;
+    margin: 0 auto 1rem auto;
+    padding-bottom:2rem ;
+}
+.span-agroup{
+    font: normal normal 8rem var(--font-18);    
+}
+.span-agroup span{
+    position: absolute;
+}
+.span-agroup span:nth-child(1){
+    top: 107%;
+    left: 15%;
+}
+.span-agroup span:nth-child(2){
+    top: 107%;
+    left: 75%;
+}
+.span-agroup span:nth-child(3){
+    top: 169%;
+    left: 75%;
+}
+.span-agroup span:nth-child(4){
+    top: 169%;
+    left: 17%;
+}
+.span-agroup span:nth-child(5){
+    top: 121%;
+    left: 32%;
+}
+.span-agroup span:nth-child(6){
+    top: 121%;
+    left: 60%;
+}
+.sobre-agroup{
+    padding: 2rem 0 0 0;
+    
+}
+.sobre-agroup h1{
+    text-align: center;
+    font: normal bolder 4rem var(--font-21);
+    color: #4b4b4b;
+    border-bottom: 4px solid #6a3093;
+    margin-left: 38%;
+    margin-bottom: 1rem;
+    width: 25%;
+}
+.sobre-agroup h1:hover{
+    color: black;
+    cursor: context-menu;    
+}
+.sobre-div{
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    margin: auto;
+    background-color: rgb(218, 214, 214);
+    border: .1px solid rgba(0, 0, 0, 0.534);
+    border-radius: .5rem;
+}
+.sobre-div h2{
+    text-align: center;
+    font: normal bolder 5rem var(--font-7);
+    color: #4b4b4b;
+}
+.sobre-div h2:hover{
+    color: black;   
+    cursor: context-menu;    
+}
+.sobre-text{
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-radius: 2rem 0 1rem .5rem;
+    border:1px solid black ;
+    padding: 1rem 2rem 2rem 2rem; 
+}
+.sobre-text h3{
+    text-align: center;
+    font: normal bolder 2rem var(--font-21);
+}
+.sobre-text p{
+    text-indent: 2rem;
+    font: normal normal 1.2rem var(--font-20);
+}

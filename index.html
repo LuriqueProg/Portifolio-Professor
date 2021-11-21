@@ -210,7 +210,98 @@
                 </div>
             </div>
         </section>
-        <section class="estude" id="estude"></section>
+        <section class="estude" id="estude">
+            <h1>Estude Comigo</h1>
+            <div class="sessao-estude formulario">
+                <div class="inscri">
+                    <h2> Incrição do Aluno </h2>
+                    <form action="">
+                        <div class="aluno">
+                            <h3>Informações do Aluno</h3>
+                            <p>Nome<span class="obrigatorio">*</span> : <input type="text" class="field" id="alunonome" placeholder="Insira o Nome do aluno" required></p>
+                            <p>Data de nascimento<span class="obrigatorio">*</span> : <input type="date" class="field" name="" id="alunodata" placeholder="Insira a Data de Nascimento do Aluno" required></p>
+                            <p>Idade<span class="obrigatorio">*</span> : <input type="number" class="field" name="" id="alunoidade" placeholder="Insira a Idade do Aluno"></p>
+                            <p>CPF : <input type="number"class="field" id="alunocpf" placeholder="Insira o CPF do aluno" minlength="11" maxlength="12" min="0"></p>
+                        </div>
+                        <h2>Serie a ser inserido </h2>
+                        <div class="serie">
+                            <div class="fundamental">
+                                <h3>Ensino Fundamental <span class="obrigatorio">*</span></h3>
+                                <p class="radp"><input type="radio" name="serief" id="" checked> Padrão </p>
+                                <p class="radp"><input type="radio" name="serief" id=""> 1º Ano</p>
+                                <p class="radp"><input type="radio" name="serief" id=""> 2º Ano</p>
+                                <p class="radp"><input type="radio" name="serief" id=""> 3º Ano</p>
+                                <p class="radp"><input type="radio" name="serief" id=""> 4º Ano</p>
+                                <p class="radp"><input type="radio" name="serief" id=""> 5º Ano</p>
+                                <p class="radp"><input type="radio" name="serief" id=""> 6º Ano</p>
+                                <p class="radp"><input type="radio" name="serief" id=""> 7º Ano</p>
+                                <p class="radp"><input type="radio" name="serief" id=""> 8º Ano</p>
+                                <p class="radp"><input type="radio" name="serief" id=""> 9º Ano</p>
+                            </div>
+                            <div class="medio">
+                                <h3>Ensino Médio <span class="obrigatorio">*</span></h3>
+                                <p class="radp"><input type="radio" name="seriem" id="" checked> Padrão </p>
+                                <p class="radp"><input type="radio" name="seriem" id=""> 1º Ano do Ensino Médio</p>
+                                <p class="radp"><input type="radio" name="seriem" id=""> 2º Ano do Ensino Médio</p>
+                                <p class="radp"><input type="radio" name="seriem" id=""> 3º Ano do Ensino Médio</p>
+                            </div>
+                        </div> 
+                        <div class="rad">
+                            <h3>Escolas<span class="obrigatorio">*</span> :</h3>
+                            <p class="radp"><input type="radio" name="radschools" id="" checked> Padrão </p>
+                            <p class="radp"><input type="radio" name="radschools" id=""> Escola Preparatoria de PE</p>
+                            <p class="radp"><input type="radio" name="radschools" id=""> Escola Aplicação de PE</p>
+                            <p class="radp"><input type="radio" name="radschools" id=""> Escola Tecnica de PE</p>
+                            <p class="radp"><input type="radio" name="radschools" id=""> Escola Federal de PE</p>
+                            <p class="radp"><input type="radio" name="radschools" id=""> Apreligio Veloso</p>
+                        </div>                       
+                        <p>Obsevações <textarea name="" id="" cols="20" rows="5"></textarea></p>
+                        <div class="responsavel">
+                            <h3>Informações do Responsavel</h3>
+                            <p>Nome<span class="obrigatorio">*</span> : <input type="text" class="field" placeholder="Insira seu Nome" id="respnome" required></p>
+                            <p>CPF<span class="obrigatorio">*</span> : <input type="number"class="field" placeholder="Insira seu CPF" id="respcpf" required minlength="11" maxlength="11"></p>
+                            <p>E-mail<span class="obrigatorio">*</span> : <input type="email" class="field" placeholder="Insira seu E-mail" id="respemail" required></p>
+                            <p>Renda Mensal bruta <span class="obrigatorio"> * </span>
+                                <select name="" id="" required class="field selectfield">
+                                <option value="" style="text-align: center; text-transform: uppercase;">Insira Sua Renda Mensal</option>
+                                <option value="">Entre Meio Salario Minimo e 1 Salario Minimo</option>
+                                <option value="">Entre 1 Salario Minimo e 2 Salarios Minimo</option>
+                                <option value="">Entre 2 Salarios Minimo e 4 Salarios Minimo</option>
+                                <option value="">Entre 4 Salarios Minimo e 6 Salarios Minimo</option>
+                                <option value="">Entre 6 Salarios Minimo e 8 Salarios Minimo</option>
+                                <option value="">Entre 8 Salarios Minimo e 10 Salarios Minimo</option>
+                                <option value="">Mais de 8 Salarios Minimos</option>
+                                </select>
+                            </p>
+                            <div class="endere">
+                                <p>Estado<span class="obrigatorio">*</span> : <input type="text" class="field" id="endereest" placeholder="Insira seu Estado" required></p>
+                                <p>CEP<span class="obrigatorio">*</span> : <input type="text" class="field" name="" id="enderecep" placeholder="Insira seu CEP" required></p>
+                                <p>Cidade<span class="obrigatorio">*</span> :  <input type="text" class="field" id="enderecid" placeholder="Insira sua Cidade" required></p>
+                                <p>Bairro<span class="obrigatorio">*</span> :  <input type="text" class="field" id="enderebai" placeholder="Insira seu Bairro" required></p>
+                                <p>Complemento<span class="obrigatorio">*</span> :  <input type="text" class="field" id="enderecomp" placeholder="Insira um Complemento" required></p>
+                            </div>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn btn-inputmenu">
+                    </form>
+                </div>
+                <div class="mais-info">
+                    <h3>Para mais informações</h3>
+                    <h4>Insira os dados abaixo, que as informações serão enviadas para seu E-mail</h4>
+                    <form action="">
+                        <p>Nome <span class="obrigatorio">*</span>: <input type="text" class="field" placeholder="Insira seu Nome" required></p>
+                        <p>E-mail<span class="obrigatorio">*</span> : <input type="email" class="field" placeholder="Insira seu E-mail" required></p>
+                        <p>Mensagem Adicional : </p>
+                        <textarea name="" id="" cols="20" rows="5" class="field" norequired></textarea>
+                        <input type="submit" value="Enviar" class="btn btn-inputmenu">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="up">
+            <a href="#home" id="link-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
         <footer>
             <div class="footer-content">
                 <p>Copyright © 2021 ©, Luiz Henrique - Todos os direitos reservados</p>

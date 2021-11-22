@@ -120,6 +120,13 @@ header h1{
     text-transform: uppercase;
     font: normal normal 4rem var(--font-1);
 }
+header h1::after{
+    content: '|';
+}
+header h1::before{
+    content: '|';
+}
+
 header h2{
     /* text-transform: uppercase; */
     font: normal lighter 2.5rem var(--font-20);
@@ -332,6 +339,9 @@ nav ul li:hover{
 .mount{
     font-family: var(--font-17);
     font-size: 4rem;
+}
+.sessao-conhecimento{
+    margin: 3rem 0;
 }
 .conhecimentos{
     display: grid;
@@ -667,4 +677,201 @@ footer{
 }
 .footer-social-list ul li i:hover{
     color: green;
+}
+
+
+@media(max-width:1400px){
+    .conhecimento-img-wrapper {
+        grid-column: 7/11;
+        grid-row: 4/2;        
+    }
+    .open .hamb {
+        left: 16%;
+    }
+}
+@media(max-width:1350px){
+    .conhecimento-img-wrapper{
+        display: none;
+    }
+    .conhecimento-img-wrapper img{
+        display: none;
+    }
+    .conhecimentos{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+    }    
+    .conhecimento{
+        width: 30rem;
+        padding: 1.4rem;
+        border-radius: 1rem;
+        border: 3px solid black;
+        box-shadow: 2px 6px 2px rgba(0, 0, 0, 0.486);
+    }
+    .conhecimento-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        align-content: center;
+    }
+    .open .hamb {
+        left: 15%;
+    }
+}
+@media(max-width:1300px){
+    .conhecimentos-agroup h1 {
+        text-align: center;
+        font: normal bolder 3rem var(--font-21);        
+        width: 50%;
+    }
+    .open .hamb {
+        left: 18%;
+    }
+}
+@media(max-width:1250px){
+    .formulario {        
+        margin-right: .5rem;
+    }
+    .open .hamb {
+        left: 20%;
+    }
+}
+@media(max-width:1200px){
+    .formulario {        
+        display: flex;
+        justify-content: space-evenly;        
+        flex-direction: column;
+        align-items: center;  
+        margin: 0;      
+    }
+    .mais-info{
+        margin: 4rem 0;
+    }.open .hamb {
+        left: 19%;
+    }
+}
+@media(max-width:1050px){
+    .sobre-div{
+        width: 80%;
+    }
+    .tree{
+        display: none;
+    }
+    .estude h1{
+        font-size: 3rem;
+    }
+    .sessao-projetos h1{
+        font-size: 3rem;
+    }
+    .open .hamb {
+        left: 20%;
+    }
+}
+@media(max-width:980px){
+    header h1{
+        font-size: 3rem;
+    }
+    header h2{
+        font-size: 2rem;
+    }
+    .card-group {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        max-width: 18rem;
+        margin: 1rem 0;
+    }
+    .open .hamb {
+        left: 22%;
+    }
+}
+@media(max-width:890px){
+    header h2{
+        display: none;
+    }
+    .sessao-projetos h1 {
+        text-align: center;
+        font: normal bolder 3rem var(--font-21);
+        color: #fff;
+        border-bottom: 4px solid #6a3093;        
+        margin-bottom: 1rem;
+        width: 44%;
+        margin: auto;
+    }
+    .conhecimentos-agroup h1 {
+        text-align: center;
+        font: normal bolder 3rem var(--font-21);
+        width: 85%;
+    }
+    .sobre-agroup h1 {
+        text-align: center;
+        font: normal bolder 4rem var(--font-21);
+        color: #4b4b4b;
+        border-bottom: 4px solid #6a3093;
+        /* margin-left: 38%; */
+        margin-bottom: 1rem;
+        width: 55%;
+        margin: auto;
+    }
+    .open .hamb {
+        left: 25%;
+    }
+}
+@media(max-width:750px){
+    header h1::after{
+        content: '';
+    }
+    header h1::before{
+        content: '';
+    }
+    .sobre-div h2 {
+        text-align: center;
+        font: normal bolder 4rem var(--font-7);
+        color: #4b4b4b;
+    }
+    .open .hamb {
+        left: 28%;
+    }
+}
+@media(max-width:650px){
+    nav ul {        
+        color: black;
+        padding: 0.2rem 0rem;
+    }
+    nav ul li {
+        font-size: 1rem;
+        padding: 0.2rem 1.4rem 0.2rem;
+        border-radius: 1rem;
+        font-weight: bold;
+    }
+    .open .hamb {
+        left: 34%;
+    }
+}
+@media(max-width:590px){
+    .conhecimento{
+        width: 25rem;
+    }
+    .inscri, .mais-info{
+        margin: 1rem .2rem;
+    }
+    
+    .sobre-div {
+        width: 84%;
+    }  
+    .sobre-div h2 {
+        text-align: center;
+        font: normal bolder 3.5rem var(--font-7);
+        color: #4b4b4b;
+    }
+    .open .hamb {
+        left: 37%;
+    }
 }

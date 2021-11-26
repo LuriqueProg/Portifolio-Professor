@@ -857,7 +857,7 @@ footer{
 }
 @media(max-width:590px){
     .conhecimento{
-        width: 25rem;
+        width: 22rem;
     }
     .inscri, .mais-info{
         margin: 1rem .2rem;
@@ -873,5 +873,36 @@ footer{
     }
     .open .hamb {
         left: 37%;
+    }
+    nav ul {        
+        color: black;
+        padding: 0.1rem 0rem;
+        justify-content: space-evenly;
+    }
+    nav ul li {
+        font-size: .8rem;
+        padding: 0.2rem 1rem;
+        border-radius: 1rem;
+        font-weight: lighter;
+    }
+    .sobre-text {
+        background-color: #fff;
+        margin-bottom: 0rem;
+        border-radius: 2rem 0 1rem 0.5rem;
+        border: 1px solid black;
+        padding: 1rem;
+    }
+    .inscri form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width:550px){
+    .conhecimento{
+        width: 20rem;
     }
 }

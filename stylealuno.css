@@ -129,6 +129,7 @@
    border-bottom: .1px solid black;
    border-top: .1px solid black;
    position: fixed;
+   box-shadow: .2rem 0px rgba(0, 0, 0, 0.4);
 }
 .sub-header{       
     margin-left:20rem ;
@@ -141,10 +142,15 @@
 }
 .perfil{
     cursor: pointer;
+    text-transform: uppercase;
+}
+.perfil i{
+    font-size: 1.6rem;
 }
 .navbar-ulist{
     background-color: #333c4e;
     color: rgb(160, 160, 160);
+    box-shadow: .2rem 3px rgba(0, 0, 0, 0.4);
 }
 .navbar-ulist{
     border-right: 3px solid black;
@@ -168,6 +174,14 @@
 .navbar-ulist li:hover{
     color: white;
     border-left: 4px solid green;
+    border-radius: 0 1rem .4rem 0 ;
+    cursor: pointer;
+}
+#mark{
+    background-color: rgba(102, 102, 238, 0.8);
+    color: white;
+    border-left: 4px solid green;
+    border-right: 4px solid rgba(50, 255, 255, 0.8);
     border-radius: 0 1rem .4rem 0 ;
     cursor: pointer;
 }

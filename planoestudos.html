@@ -15,32 +15,86 @@
     <title> | Portal do Aluno | Roseane Maria |</title>
 </head>
 <body>
-    <header class="header" id="home">
-        <div class="menu">
-            <h1>Portal do Aluno</h1>
-        </div>
-        <div class="sub-header">
-            <div class="titulo">
-                <h1> Planos de Estudos</h1>
+    <div class="container">
+        <header class="header" id="home">
+            <div class="menu">
+                <h1>Portal do Aluno</h1>
             </div>
-            <div class="perfil">
-                <h3><span class="icon"><i class="fas fa-id-badge"></i></span>Aluno</h3>
+            <div class="sub-header">
+                <div class="titulo">
+                    <h1> Planos de Estudos</h1>
+                </div>
+                <div class="perfil">
+                    <h3><span class="icon"><i class="fas fa-id-badge"></i></span>Aluno</h3>
+                </div>
             </div>
-        </div>
-    </header>
-    <nav class="navbar">
-        <ul class="navbar-ulist">
-            <a href="index.html#home"><li><span class="icon"><i class="fas fa-hand-point-left"></i></span>Voltar</li></a>
-            <a href="menuestudos.html#home"><li><span class="icon"><i class="fas fa-home-lg"></i></span>Home</li></a>
-            <a href="planoestudos.html"><li id="mark"><span class="icon"><i class="fas fa-passport"></i></span>Plano de Estudo</li></a>
-            <a href="exercicios.html"><li><span class="icon"><i class="fas fa-key"></i></span>Exercicios</li></a>
-            <a href="slides.html"><li><span class="icon"><i class="fas fa-file-medical"></i></span>Slides</li></a>
-            <a href="dataentrega.html"><li><span class="icon"><i class="fas fa-table"></i></span>Datas de Entregas</li></a>
-            <a href="aulasrecomendadas.html"><li><span class="icon"><i class="fas fa-video"></i></span>Aulas Recomendadas</li></a>
-            <a href="teste.html"><li><span class="icon"><i class="fas fa-check-square"></i></span>Teste</li></a>
-            <a href="presen.html"><li><span class="icon"><i class="fas fa-user-tag"></i></span>Presença do Aluno</li></a>
-        </ul>
-    </nav>                    
-</div>
+        </header>
+        <nav class="navbar">
+            <ul class="navbar-ulist">
+                <a href="index.html#home"><li><span class="icon"><i class="fas fa-hand-point-left"></i></span>Voltar</li></a>
+                <a href="menuestudos.html#home"><li><span class="icon"><i class="fas fa-home-lg"></i></span>Home</li></a>
+                <a href="planoestudos.html"><li id="mark"><span class="icon"><i class="fas fa-passport"></i></span>Plano de Estudo</li></a>
+                <a href="exercicios.html"><li><span class="icon"><i class="fas fa-key"></i></span>Exercicios</li></a>
+                <a href="slides.html"><li><span class="icon"><i class="fas fa-file-medical"></i></span>Slides</li></a>
+                <a href="dataentrega.html"><li><span class="icon"><i class="fas fa-table"></i></span>Datas de Entregas</li></a>
+                <a href="aulasrecomendadas.html"><li><span class="icon"><i class="fas fa-video"></i></span>Aulas Recomendadas</li></a>
+                <a href="teste.html"><li><span class="icon"><i class="fas fa-check-square"></i></span>Teste</li></a>
+                <a href="presen.html"><li><span class="icon"><i class="fas fa-user-tag"></i></span>Presença do Aluno</li></a>
+            </ul>
+        </nav>  
+        <div class="container-wrapper">
+            <section class="sessaoestudos">
+                <div class="card-wrapper">
+                    <div class="select">                        
+                        <select name="Materias" id="materias">
+                            <option value="biologia" id="bio">Biologia</option>
+                            <option value="Fisica" id="fis">Fisica</option>
+                            <option value="Quimica" id="qui">Quimica</option>
+                            <option value="Matematica" id="mat">Matematica</option>
+                            <option value="Historia" id="his">Historia</option>
+                            <option value="Geografia" id="geo">Geografia</option>
+                            <option value="Linguas" id="por">Portugues</option>
+                            <option value="Sociologia" id="soc">Sociologia</option>
+                            <option value="Filosofia" id="fil">Filosofia</option>
+                            <option value="Linguas" id="ing">Ingles</option>
+                        </select>
+                    </div>
+                    <div class="materia">
+                        <div class="biologia open">
+                            <h2>Biologia</h2>
+                        </div>
+                        <div class="filosofia">
+                            <h2>Filosofia</h2>
+                        </div>
+                        <div class="fisica">
+                            <h2>Fisica</h2>
+                        </div>
+                        <div class="quimica">
+                            <h2>Quimica</h2>
+                        </div>
+                        <div class="matematica">
+                            <h2>Matematica</h2>
+                        </div>
+                        <div class="historia">
+                            <h2>Historia</h2>
+                        </div>
+                        <div class="geografia">
+                            <h2>Geografia</h2>
+                        </div>
+                        <div class="pt">
+                            <h2>Portgues</h2>
+                        </div>
+                        <div class="sociologia">
+                            <h2>Sociologia</h2>
+                        </div>
+                        <div class="ingles">
+                            <h2>Ingles</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>                
+    </div>
+    <script src="script2.js"></script>
 </body>
 </html>

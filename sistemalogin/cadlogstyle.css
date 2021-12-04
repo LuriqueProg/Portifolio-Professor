@@ -1,0 +1,220 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family:'biology1';
+    src: url('fontes/Biology.ttf') format('truetype');
+}
+@font-face {
+    font-family:'biology2';
+    src: url('fontes/Biometro_gothic.ttf') format('truetype');
+}
+@font-face {
+    font-family:'biology3';
+    src: url('fontes/BIONICKIDSIMPLE.ttf') format('truetype');
+}
+@font-face {
+    font-family:'biology4';
+    src: url('fontes/BIONICKIDSIMPLESLANTED.ttf') format('truetype');
+}
+@font-face {
+    font-family:'biology5';
+    src: url('fontes/BIONICKIDSLANTED3D.ttf') format('truetype');
+}
+@font-face {
+    font-family:'cursive';
+    src: url('fontes/Cursivestandard.ttf') format('truetype');
+}
+@font-face {
+    font-family:'cursivebold';
+    src: url('fontes/CursivestandardBold.ttf') format('truetype');
+}
+@font-face {
+    font-family:'ec1';
+    src: url('fontes/ec.TTF') format('truetype');
+}
+@font-face {
+    font-family:'ec2';
+    src: url('fontes/ec_co_pt.TTF') format('truetype');
+}
+@font-face {
+    font-family:'ec3';
+    src: url('fontes/ec_cour.TTF') format('truetype');
+}
+@font-face {
+    font-family:'ec4';
+    src: url('fontes/ec_cp.TTF') format('truetype');
+}
+@font-face {
+    font-family:'ec5';
+    src: url('fontes/ecl.TTF') format('truetype');
+}
+@font-face {
+    font-family:'ec6';
+    src: url('fontes/ecl_cour.TTF') format('truetype');
+}
+@font-face {
+    font-family:'days1';
+    src: url('fontes/LittleDaisy.ttf') format('truetype');
+}
+@font-face {
+    font-family:'days2';
+    src: url('fontes/Littledays.ttf') format('truetype');
+}
+@font-face {
+    font-family:'days3';
+    src: url('fontes/LittleDaysAlt.ttf') format('truetype');
+}
+@font-face {
+    font-family:'figufontmont';
+    src: url('fontes/Mountain.ttf') format('truetype');
+}
+@font-face {
+    font-family:'figufonttree';
+    src: url('fontes/treesTFB.ttf') format('truetype');
+}
+:root{
+    --font-1:'biology1';
+    --font-2:'biology2';
+    --font-3:'biology3';
+    --font-4:'biology4';
+    --font-5:'biology5';
+    --font-6:'cursive';
+    --font-7:'cursivebold';
+    --font-8:'ec1';
+    --font-9:'ec2';
+    --font-10:'ec3';
+    --font-11:'ec4';
+    --font-12:'ec5';
+    --font-13:'ec6';
+    --font-14:'days1';
+    --font-15:'days2';
+    --font-16:'days3';
+    --font-17:'figufontmont';
+    --font-18:'figufonttree';   
+    --font-19:'Times New Roman', Times, serif;
+    --font-20:Arial, Helvetica, sans-serif;
+    --font-21: 'Baloo Da 2', 'cursive';
+    --font-22: 'Lato', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #504c48;
+}
+main, .otherop{
+    background-color: #c6c1bf;
+}
+.container{
+    width: 50rem;
+    margin: auto;    
+}
+main{
+    margin: 1rem 0;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    border-bottom: 8px solid #363330;
+}
+.main-header{
+    height: 10rem;
+    width: 100%;
+    background:#c6c1bf url('../android-chrome-512x512.png') center center /contain no-repeat ;      
+}
+.socialmedia{    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.socialmedia li{
+    width: 20%;
+    text-align: center;
+    padding:0rem 4rem;
+    margin: .4rem;    
+    border-radius: 1rem!important;
+}
+.socialmedia li:hover{
+    color: black;
+    cursor: pointer;
+}
+.google{
+    background: #de4c33;
+    color: white;    
+}
+.fb{
+    background: #3e569c;
+    color: white;    
+}
+.twitter{
+    background: #45b0e4;
+    color: white;    
+}
+.socialmedia li span{
+    font-size: 3rem;    
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin: 0.4rem 0;
+    padding: 1rem;
+    border-radius: 2rem 0 2rem 0;
+    font-size: 1.6rem;
+    border: 1px solid black;
+}
+.checkbox{
+    font-size: 1.5rem;
+}
+#termos{
+    color: blue;
+}
+#termos:hover{
+    text-decoration: underline;
+}
+.btn{
+    cursor: pointer;
+    background-color:#434345;
+    color: white;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+.otherop{
+    font-size: 1.2rem;
+    background-color:#9C948C;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    border-radius: 2rem;
+    border-bottom: 8px solid #363330;
+    margin-bottom: 5rem;
+}
+.otherop2{
+    display: flex;
+    justify-content: space-between;
+    background-color:#9C948C;
+    text-align: center;
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    border-bottom: 8px solid #363330;
+    margin-bottom: 5rem;
+}
+.otherop h2{
+    color: #cec4ba;
+}
+.otherop a:hover{
+    color: blue;
+    text-decoration: underline;
+    text-transform: uppercase;
+}

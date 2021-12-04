@@ -167,7 +167,7 @@ body.menuestudos{
     position: absolute;
     right: 0px;
     width: 22rem;    
-    box-shadow: -7px 11px 8px 2px black;
+    box-shadow: -7px 11px 8px 2px rgba(0, 0, 0, 0.308);
     border-radius: 0px 0 0px 20px;    
     display: flex;
     flex-direction: column;
@@ -222,6 +222,7 @@ body.menuestudos{
     justify-content: space-between;
     padding: 0 2.6rem 0 0;
     border: .1px solid rgba(0, 0, 0, 0.712);
+    z-index: 10;
 }
 .ulist-tipologin{
     display: flex;
@@ -238,8 +239,7 @@ body.menuestudos{
     width: 70px;    
 }
 .ulist-tipologin li span{
-    vertical-align: top;
-    
+    vertical-align: top;    
 }
 .google{
     background: #de4c33;

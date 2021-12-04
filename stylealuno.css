@@ -109,9 +109,15 @@
     scroll-behavior: smooth;
     list-style: none;
 }
+body.planoestudos{
+    background-color: #eee;
+}
+body.menuestudos{
+    background:gray url('imagens/rose.jpg') top center /cover no-repeat fixed ;    
+}
 .container{    
     margin: auto;    
-    background-color: #ffc;
+    
 }
 .header{
     display: flex;    
@@ -119,6 +125,7 @@
     width: 100%;
     border-bottom: .1px solid black;
     padding-bottom: .5rem;
+    background-color: #ffc;
 }
 .menu{   
    padding: .4rem .5rem; 
@@ -133,6 +140,9 @@
    position: fixed;
    box-shadow: .2rem 0px rgba(0, 0, 0, 0.4);
 }
+.abrirlogin .menu{
+    border-bottom: 0px;
+}
 .sub-header{       
     margin-left:20rem ;
     padding: .2rem .5rem;
@@ -140,14 +150,144 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 80%;
+    width: 80%;    
 }
 .perfil{
     cursor: pointer;
     text-transform: uppercase;
+    position: relative;
 }
 .perfil i{
     font-size: 1.6rem;
+    
+}
+.abrirlogin #sistemaaluno{
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    width: 22rem;    
+    box-shadow: -7px 11px 8px 2px black;
+    border-radius: 0px 0 0px 20px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.abrirlogin #sistemaaluno::before{
+    border-left: 14px solid white;
+    border-right: 14px solid white;
+    border-top: 14px solid #000;
+    content: "";
+    height: 5px;
+    position: absolute;
+    left: 48px;
+    top: 0;
+}
+.liberaracesso #sistemaaluno{
+    border: 0;
+    box-shadow: 0px 0px 0px 0px black;
+    border-radius: 0;
+}
+.cadastrar{
+    cursor: pointer;
+}
+.entrar{
+    cursor: pointer;    
+}
+.abrirentrar::before{
+    border-left: 14px solid white;
+    border-right: 14px solid white;
+    border-top: 14px solid #000;
+    content: "";
+    height: 5px;
+    position: absolute;
+    left: 169px;
+    top: 86px;
+}
+.sistemaaluno{
+    display: none;
+}
+.tipologin{
+    display: none;
+}
+.liberartipo{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 152px;    
+    align-items: center;
+    width: 36.9rem;
+    justify-content: space-between;
+    padding: 0 2.6rem 0 0;
+    border: .1px solid rgba(0, 0, 0, 0.712);
+}
+.ulist-tipologin{
+    display: flex;
+    background-color: transparent;
+}
+.ulist-tipologin li{
+    border-bottom: 8px solid;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    height: 60px;
+    text-align: center;
+    width: 70px;    
+}
+.ulist-tipologin li span{
+    vertical-align: top;
+    
+}
+.google{
+    background: #de4c33;
+    border-bottom-color: #9b3524!important;    
+}
+.google:hover{
+    border-bottom-color: #de4c33!important;
+}
+.fb{
+    background: #3e569c;
+    border-bottom-color: #2b3c6d!important;
+}
+.fb:hover{    
+    border-bottom-color: #3e569c!important;
+}
+.twitter{
+    background: #45b0e4;
+    border-bottom-color: #307b9f!important;
+}
+.twitter:hover{    
+    border-bottom-color: #45b0e4!important;
+}
+.portal{
+    background-color: #495B7A;
+    border-bottom-color:#3A4861!important ;
+}
+.portal:hover{    
+    border-bottom-color:#495B7A!important ;
+}
+.google-icon, .facebook-icon, .twitter-icon{    
+    font-size: 4rem;
+    position: relative;
+    top: -10px;
+    font-weight: bold;
+    color: white;
+}
+.facebook-icon {
+    font-size: 3.5rem;
+    top: -5px;
+}
+.portal-portal{
+    width: 70px;
+    height: 60px;
+}
+.portal-portal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .navbar-ulist{
     background-color: #333c4e;
@@ -208,6 +348,9 @@ select#materias option{
 .materia .open{
     display: block;
 }
+.fechar{
+    display: none;
+}
 .card{
     display: flex;
     flex-direction: row;
@@ -215,11 +358,12 @@ select#materias option{
     justify-content: space-between;
     align-items: flex-start;
     margin: 2rem 0 0 3rem;
-    background-color: rgb(251, 233, 233);
+    background-color: #fff;
     border-radius: 1.2rem;
     position: relative;
     padding: 0.8rem 0.5rem;
     transition: all .8s;
+    border: 1px solid black;
 }
 .card:hover {
     transform: translateZ(.1rem);
@@ -290,7 +434,7 @@ select#materias option{
 }
 .btn button{    
     border: 0;
-    background-color: #e9cbcb41;
+    background-color: #e6e6e6;
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: 0.5rem 1rem;

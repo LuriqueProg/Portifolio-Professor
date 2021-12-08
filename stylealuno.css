@@ -110,7 +110,7 @@
     list-style: none;
 }
 body.planoestudos{
-    background-color: #eee;
+    background-color: rgb(218, 218, 218);
 }
 body.menuestudos{
     background:gray url('imagens/rose.jpg') top center /cover no-repeat fixed ;    
@@ -357,13 +357,12 @@ select#materias option{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 2rem 0 0 3rem;
-    background-color: #fff;
-    border-radius: 1.2rem;
-    position: relative;
-    padding: 0.8rem 0.5rem;
-    transition: all .8s;
-    border: 1px solid black;
+    margin: 2rem 0 0 0rem;
+    background-color: #fff;    
+    position: relative;    
+    transition: all .8s;        
+    width: 100%;
+    font-family: var(--font-21);
 }
 .card:hover {
     transform: translateZ(.1rem);
@@ -371,31 +370,52 @@ select#materias option{
     box-shadow: 0 4px 4px rgb(0 0 0 / 35%);
     opacity: .9;
     cursor: pointer;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+.card:hover .card-img-wrapper img{
+    border-radius: 1rem 0 0 1rem;
 }
 .card-img-wrapper{
     width: 15rem;
     height: 15rem;
-    background-color: rgb(32, 26, 26);
-    border-radius: 1rem 0 0 1rem;
+    background-color: rgb(32, 26, 26);    
     opacity: .9;
     z-index: 100;
 }
 .card-img-wrapper img{
-    width: 100%;
+    width: 107%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 1rem 0 0 1rem;    
+    object-fit: cover;      
 }
 .title{    
     margin-right: 9.5rem;
 }
-/* .card:hover .card-img-wrapper img{
-    opacity: .8;    
-} */
+.filosofia .title{
+    margin-right: 30rem;
+}
+.geografia .title{
+    margin-right: 21rem;
+}
+.pt .title{
+    margin-right: 14rem;
+}
+.quimica .title{
+    margin-right: 25rem;
+}
+.historia .title{
+    margin-right: 30rem;
+}
+.matematica .title{
+    margin-right: 33rem;
+}
+.ingles .title{
+    margin-right: 28rem;
+}
 .professor{
     position: absolute;
     top: 6rem;
-    left: 15.9rem;
+    left: 17rem;
 }
 .prof-img-wrapper{
     width: 3rem;
@@ -427,10 +447,9 @@ select#materias option{
     margin-left: -8px;
     position: absolute;
     left: 37%;
-    bottom: 17px;
-    /* padding: .5rem; */
-    /* background-color: #ffffff56; */
+    bottom: 17px;    
     border-radius: 2rem;
+    font-family: var(--font-22);
 }
 .btn button{    
     border: 0;
@@ -438,7 +457,7 @@ select#materias option{
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
-    cursor: pointer;
-    /* width: 10rem; */
+    cursor: pointer;    
     border-radius: 2rem;
+    font-family: var(--font-22);
 }
